@@ -1,0 +1,61 @@
+<div class="container">
+    <div class="long_rectangle_orange"></div>
+    <div class="short_rectangle_orange"></div>
+    <div class="long_rectangle_blue"></div>
+    <div class="short_rectangle_blue"></div>
+</div>
+<style>
+    body {
+        background: #222;
+    }
+
+    .container {
+        position: relative;
+        width: 130px;
+        height: 118px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    div[class*="orange"] {
+        background: #F2994A;
+    }
+
+    div[class*="blue"] {
+        background: #2D9CDB;
+    }
+
+    div[class*="long"] {
+        width: 30px;
+        height: 100px;
+    }
+
+    .long_rectangle_orange {
+        border-radius: 0 0 0 10px;
+    }
+
+    .long_rectangle_blue {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        border-radius: 0 10px 0 0;
+    }
+
+    div[class*="short"] {
+        position: absolute;
+        width: 80px;
+        height: 30px;
+    }
+
+    .short_rectangle_orange {
+        bottom: 17px;
+        border-radius: 0 6px 0 10px;
+    }
+
+    .short_rectangle_blue {
+        top: 18px;
+        right: 0;
+        border-radius: 0 10px 0 6px;
+    }
+</style>
